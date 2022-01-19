@@ -21,3 +21,4 @@ DevLog:
 - [x] delete file
 - [x] start clash
 - [x] stop clash
+- [ ] specifies file directory
