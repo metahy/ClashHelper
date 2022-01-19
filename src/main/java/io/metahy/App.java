@@ -16,7 +16,7 @@ public class App extends Application {
     public void start(Stage stage) throws IOException {
         Parent root = FXMLLoader.load(Objects.requireNonNull(getClass().getResource("/main.fxml")));
         stage.setTitle("Clash Helper");
-        stage.getIcons().add(new Image("file:src/main/resources/logo.png"));
+        stage.getIcons().add(new Image(Objects.requireNonNull(getClass().getResource("/logo.png")).openStream()));
         stage.setScene(new Scene(root, 300, 320));
         stage.show();
     }

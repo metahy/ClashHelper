@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
   <modelVersion>4.0.0</modelVersion>
-  <groupId>org.example</groupId>
-  <artifactId>javafxmvn</artifactId>
-  <name>javafxmvn</name>
+  <groupId>io.metahy</groupId>
+  <artifactId>clashhelper</artifactId>
+  <name>ClashHelper</name>
   <version>1.0-SNAPSHOT</version>
   <build>
     <plugins>
@@ -19,7 +19,7 @@
             <configuration>
               <transformers>
                 <transformer>
-                  <mainClass>org.example.AppLauncher</mainClass>
+                  <mainClass>io.metahy.AppLauncher</mainClass>
                 </transformer>
               </transformers>
             </configuration>
