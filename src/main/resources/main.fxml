@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.AnchorPane?>
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0"
+            prefWidth="600.0" xmlns="http://javafx.com/javafx/11" xmlns:fx="http://javafx.com/fxml/1"
+            fx:controller="io.metahy.MainController">
+    <children>
+        <Label layoutX="15.0" layoutY="10.0" text="URL"/>
+        <TextField fx:id="url" layoutX="15.0" layoutY="25.0" prefWidth="230" promptText="https://"/>
+        <Label layoutX="15.0" layoutY="60.0" text="Target file name"/>
+        <TextField fx:id="fileName" layoutX="15.0" layoutY="76.0" prefWidth="150" promptText="config.yml..."/>
+        <Button fx:id="loadBtn" layoutX="170.0" layoutY="76.0" prefWidth="75" mnemonicParsing="false" onAction="#onLoad"
+                text="Load"/>
+        <Label layoutX="15.0" layoutY="110.0" text="Exist files"/>
+        <ListView fx:id="configFiles" layoutX="15.0" layoutY="125.0" prefHeight="180.0" prefWidth="150.0"/>
+        <Button fx:id="refreshBtn" layoutX="170.0" layoutY="125.0" prefWidth="75" mnemonicParsing="false"
+                onAction="#onRefresh"
+                text="Refresh"/>
+        <Button fx:id="startBtn" layoutX="170.0" layoutY="155.0" prefWidth="75" mnemonicParsing="false"
+                onAction="#onStart"
+                text="Start"/>
+        <Button fx:id="stopBtn" layoutX="170.0" layoutY="185.0" prefWidth="75" mnemonicParsing="false"
+                onAction="#onStop"
+                text="Stop"/>
+        <Button fx:id="delBtn" layoutX="170.0" layoutY="282.0" prefWidth="75" mnemonicParsing="false"
+                style="-fx-background-color: #8b0d0d; -fx-text-fill: white"
+                onAction="#onDel"
+                text="Delete"/>
+    </children>
+</AnchorPane>
