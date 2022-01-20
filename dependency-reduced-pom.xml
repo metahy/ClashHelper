@@ -4,7 +4,7 @@
   <groupId>io.metahy</groupId>
   <artifactId>clashhelper</artifactId>
   <name>ClashHelper</name>
-  <version>1.0-SNAPSHOT</version>
+  <version>1.0</version>
   <build>
     <plugins>
       <plugin>

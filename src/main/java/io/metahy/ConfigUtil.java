@@ -64,7 +64,7 @@ public class ConfigUtil {
         System.out.println();
         System.out.println("===== System =====");
         System.out.println(" => OS: " + System.getProperty("os.name"));
-        System.out.println(" => Uh: " + System.getProperty("user.home"));
+        System.out.println(" => User home: " + System.getProperty("user.home"));
         System.out.println("==================");
         System.out.println();
     }

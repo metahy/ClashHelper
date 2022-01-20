@@ -1,6 +1,5 @@
 package io.metahy;
 
-import com.sun.javafx.PlatformUtil;
 import javafx.application.Platform;
 import javafx.collections.FXCollections;
 import javafx.event.ActionEvent;
@@ -33,6 +32,12 @@ public class MainController {
     private Button loadBtn;
 
     @FXML
+    private TextField dir;
+
+    @FXML
+    private Button setBtn;
+
+    @FXML
     private ListView<String> configFiles;
 
     @FXML
@@ -50,6 +55,7 @@ public class MainController {
     public void initialize() {
         System.setProperty("https.protocols", "TLSv1.2");
         url.setText("https://cdn.jsdelivr.net/gh/changfengoss/pub@main/data/2022_01_17/yIaJTa.yaml");
+        dir.setText(DIR);
         startBtn.setDisable(true);
         delBtn.setDisable(true);
         configFiles.getSelectionModel().selectedItemProperty().addListener((v, o, n) -> {
@@ -79,6 +85,14 @@ public class MainController {
             loadBtn.setDisable(false);
             configFiles.scrollTo(configFiles.getItems().size());
         });
+    }
+
+    @FXML
+    public void onSet(ActionEvent event) throws IOException {
+        DIR = dir.getText();
+        System.out.println("Set config dir to " + DIR);
+        ConfigUtil.setClashDir(DIR);
+        refresh(DIR);
     }
 
     @FXML

@@ -2,17 +2,27 @@
 
 > A simple JavaFx-based tool for Clash to operate config files.
 
-Usage:
+---
 
-```shell
-mvn clean package
-```
+### Usage:
 
-Example:
+1. Get the jar
 
-![ClashHelper.png](https://s2.loli.net/2022/01/19/52FQaNyVSTkYXzU.png)
+> You can run ```mvn clean package``` to build one or download from the release page.
 
-DevLog:
+2. Run
+
+> Double click the jar or run ```java -jar your-jar-file.jar``` to start
+
+---
+
+### Example:
+
+![ClashHelper.png](https://s2.loli.net/2022/01/20/XtIzpy2RGbDF5AZ.png)
+
+---
+
+### DevLog:
 
 - [x] show exist config files
 - [x] load config file from given url
@@ -21,4 +31,4 @@ DevLog:
 - [x] delete file
 - [x] start clash
 - [x] stop clash
-- [ ] specifies file directory
+- [x] specifies file directory
