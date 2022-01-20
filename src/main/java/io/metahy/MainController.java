@@ -1,5 +1,6 @@
 package io.metahy;
 
+import com.sun.javafx.PlatformUtil;
 import javafx.application.Platform;
 import javafx.collections.FXCollections;
 import javafx.event.ActionEvent;
@@ -20,7 +21,7 @@ import java.util.stream.Collectors;
  */
 public class MainController {
     //    private static final String DIR = "/home/hyleon/.config/clash";
-    private static final String DIR = "D:\\configs";
+    public static String DIR = "D:\\configs";
 
     @FXML
     private TextField url;
